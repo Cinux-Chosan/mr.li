@@ -33,7 +33,7 @@ jobs:
           # Remote host
           REMOTE_HOST: ${{ secrets.CD_SSH_HOST }}
           # Remote user
-          REMOTE_USER: root
+          REMOTE_USER: ${{ secrets.CD_USER_NAME }}
           # Remote port
           REMOTE_PORT: ${{ secrets.CD_SSH_PORT }}
           # Source directory
