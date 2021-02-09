@@ -39,4 +39,4 @@ jobs:
           # Source directory
           # SOURCE: # optional, default is 
           # Target directory
-          TARGET: /usr/share/nginx/html
+          TARGET: /usr/share/nginx/mr.li
