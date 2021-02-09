@@ -39,4 +39,4 @@ jobs:
           # Source directory
           # SOURCE: # optional, default is 
           # Target directory
-          # TARGET: # optional, default is /home/REMOTE_USER/
+          TARGET: /usr/share/nginx/html
