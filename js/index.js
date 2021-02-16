@@ -35,7 +35,7 @@ var S = {
     });
     
   
-    setTimeout(() => {
+    /*setTimeout(() => {
       S.UI.simulate('小李')
 
       setTimeout(() => {
@@ -50,7 +50,7 @@ var S = {
             }, 2000)
         }, 3500);
       }, 3500)
-    }, 4000);
+    }, 4000);*/
   }
 };
 
