@@ -27,7 +27,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('#countdown 3');
+      // S.UI.simulate('#countdown 3');
     }
 
     S.Drawing.loop(function () {
@@ -35,7 +35,7 @@ var S = {
     });
     
   
-    /*setTimeout(() => {
+    setTimeout(() => {
       S.UI.simulate('小李')
 
       setTimeout(() => {
@@ -50,7 +50,7 @@ var S = {
             }, 2000)
         }, 3500);
       }, 3500)
-    }, 4000);*/
+    }, 0);
   }
 };
 
