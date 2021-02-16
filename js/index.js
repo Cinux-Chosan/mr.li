@@ -18,6 +18,7 @@ function playMusic() {
 
 var S = {
   init: function () {
+    $(".card").hide();
     var action = window.location.href,
         i = action.indexOf('?a=');
 
@@ -46,7 +47,7 @@ var S = {
             setTimeout(() => {
               // document.querySelector('.canvas-box').style.display = 'none';
               $('.canvas-box').slideToggle(500);
-              
+              $(".card").show();
             }, 2000)
         }, 3500);
       }, 3500)
