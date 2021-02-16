@@ -27,7 +27,7 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('3|2|1|');
+      S.UI.simulate('#countdown 3');
     }
 
     S.Drawing.loop(function () {
@@ -50,7 +50,7 @@ var S = {
             }, 2000)
         }, 3500);
       }, 3500)
-    }, 0);
+    }, 3000);
   }
 };
 
