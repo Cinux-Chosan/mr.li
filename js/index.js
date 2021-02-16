@@ -12,6 +12,9 @@
 
 */
 
+function playMusic() {
+  document.querySelector('#music').play();
+}
 
 var S = {
   init: function () {
@@ -43,7 +46,7 @@ var S = {
             setTimeout(() => {
               // document.querySelector('.canvas-box').style.display = 'none';
               $('.canvas-box').slideToggle(500);
-              document.querySelector('#music').play();
+              
             }, 2000)
         }, 3500);
       }, 3500)
