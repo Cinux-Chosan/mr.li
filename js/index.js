@@ -27,15 +27,21 @@ var S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('3|2|1|');
+      // S.UI.simulate('3|2|1|');
     }
 
     S.Drawing.loop(function () {
       S.Shape.render();
     });
     
-
+    S.UI.simulate('3');
     setTimeout(() => {
+      S.UI.simulate('2');
+      setTimeout(() => {
+        S.UI.simulate('1');
+        setTimeout(() => {
+          
+          setTimeout(() => {
       S.UI.simulate('小李')
 
       setTimeout(() => {
@@ -50,7 +56,12 @@ var S = {
             }, 2000)
         }, 3500);
       }, 3500)
-    }, 3200);
+    }, 0);
+        }, 1000);
+      }, 1000);
+    }, 1000);
+    
+    
   }
 };
 
